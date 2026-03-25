@@ -129,18 +129,40 @@ footer {
     margin-bottom: 10px;
 }
 
-/* --- MEJORA DE LINKS Y DISEÑO PARA CELULAR --- */
+/* RESET TOTAL */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Asegura que los links sean blancos y legibles */
-.contact-info a, 
-.contact-info a:link, 
-.contact-info a:visited {
-    color: #ffffff !important;
-    text-decoration: none !important;
-    font-weight: bold;
+body { font-family: Arial, sans-serif; display: flex; flex-wrap: wrap; }
+
+/* CONTENEDOR PRINCIPAL */
+.container { display: flex; width: 100%; }
+
+/* BARRA LATERAL (Sidebar) */
+.sidebar {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    width: 30%; /* Ancho para computadora */
+    min-height: 100vh;
+    padding: 30px 15px;
 }
 
-.contact-info a:hover {
-    color: #3498db !important;
-    text-decoration: underline !important;
+/* LINKS BLANCOS FORZADOS */
+.contact-info a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* AJUSTE PARA CELULAR (MÓVIL) */
+@media screen and (max-width: 600px) {
+    .container { flex-direction: column !important; }
+    
+    .sidebar {
+        width: 100% !important; /* Ahora sí ocupará todo el ancho */
+        min-height: auto !important;
+        text-align: center;
+    }
+    
+    .sidebar img { width: 120px; height: 120px; border-radius: 50%; }
 }
