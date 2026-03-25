@@ -129,3 +129,18 @@ footer {
     margin-bottom: 10px;
 }
 
+/* --- MEJORA DE LINKS Y DISEÑO PARA CELULAR --- */
+
+/* Asegura que los links sean blancos y legibles */
+.contact-info a, 
+.contact-info a:link, 
+.contact-info a:visited {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #3498db !important;
+    text-decoration: underline !important;
+}
