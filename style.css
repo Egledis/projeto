@@ -1,0 +1,131 @@
+/* Configuración General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.resume-container {
+    display: flex;
+    width: 900px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    min-height: 1000px;
+}
+
+/* Barra Lateral (Azul Oscuro) */
+.sidebar {
+    width: 30%;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 25px;
+}
+
+.profile-img-container img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    font-size: 1.1rem;
+    border-bottom: 1px solid #;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li, .sidebar p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Contenido Principal (Blanco) */
+.main-content {
+    width: 70%;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #3498db;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+}
+
+.exp-item, .edu-item {
+    margin-bottom: 20px;
+}
+
+.exp-item h4 {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-item span {
+    font-weight: normal;
+    color: #4a4e51;
+    font-size: 0.85rem;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.fa-instagram {
+    color: #e1306c !important; /* Color oficial de Instagram */
+/* --- ESTE BLOQUE CAMBIA EL COLOR DEL TEXTO DEL LINK --- */
+
+.sidebar a {
+    color: #ffffff !important;    /* Obliga a que el texto sea blanco puro */
+    text-decoration: none;        /* Quita la línea morada de abajo */
+    font-weight: bold;            /* Grosor de letra para que resalte más */
+    transition: 0.3s;             /* Hace que el cambio de color sea suave */
+}
+
+/* Color cuando pasas el mouse por encima (hover) */
+.sidebar a:hover {
+    color: #3498db !important;    /* Se pone azul claro al tocarlo o pasar el mouse */
+    text-decoration: underline;   /* Aparece la línea solo al pasar el mouse */
+}
+.contact-info p {
+    display: flex;       /* Alinea icono y texto en línea */
+    align-items: center; /* Los centra verticalmente */
+    margin-bottom: 10px;
+}
+
